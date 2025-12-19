@@ -1,0 +1,56 @@
+/* Reset básico */
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f5faff;
+}
+
+/* Layout principal da página de cadastro */
+.formLayout {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+}
+
+/* Corpo do formulário */
+.formBody {
+  flex: 1;
+  padding: 2rem 3rem;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* Rodapé fixo com botão de envio */
+.formFooter {
+  padding: 1rem 2rem;
+  background-color: #e6f0fa;
+  border-top: 1px solid #cce0ff;
+  text-align: right;
+}
+
+/* Botão de envio */
+.submitButton {
+  background-color: #0078d4;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submitButton:hover {
+  background-color: #005a9e;
+}
+
+.submitButton:disabled {
+  background-color: #a0c4e3;
+  cursor: not-allowed;
+}
